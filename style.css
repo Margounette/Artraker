@@ -240,6 +240,7 @@ body {
   text-align: center;
   background-color: #5E5CC4;
   color: white;
+  text-decoration: none;
 }
 .platform__corner:nth-child(1) {
   top: -75px;
@@ -263,6 +264,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-decoration: none;
 }
 
 .team-list {
@@ -342,20 +344,20 @@ body {
   background-repeat: no-repeat;
 }
 .social-twitter {
-  background-image: url(twitter.png);
+  background-image: url(./Images/twitter.png);
 }
 .social-facebook {
-  background-image: url(facebook.png);
+  background-image: url(./Images/facebook.png);
 }
 .social-linkedin {
-  background-image: url(linkedin.png);
+  background-image: url(./Images/linkedin.png);
 }
 .social-youtube {
-  background-image: url(youtube.png);
+  background-image: url(./Images/.png);
 }
 @media (min-width: 620px) {
   .header {
-    min-height: auto;
+    /*min-height: auto;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -505,6 +507,9 @@ body {
     color: white;
     text-decoration: none;
   }
+  .impact2-intro {
+    display: block;
+  }
   .impact2-intro img {
     max-height: 1000px;
     width: 100%;
@@ -599,30 +604,32 @@ body {
     text-align: center;
     margin: 5px;
     padding: 25px;
-    border: none;
     background-color: #5E5CC4;
     font-size: 20px;
     max-width: 300px;
     height: 100%;
   }
-  .awards-announcement img {
-    max-height: 1000px;
-  }
   .awards-announcement-intro {
-    /*bottom: -250px;*/
-    position: absolute;
-    max-width: 100%;
+    position: relative;
   }
-  .awards-announcement h1 {
+  .awards-announcement-intro img {
+    max-height: 1000px;
+    width: 100%;
+  }
+  .awards-announcement-intro div {
+    bottom: 5px;
+    position: absolute;
+  }
+  .awards-announcement-intro h2 {
     color: white;
     background-color: grey;
     text-align: left;
     width: 60%;
     padding: 1em;
     font-size: 26px;
-    margin: 0 5px;
+    margin: 5px 5px;
   }
-  .awards-announcement p{
+  .awards-announcement-intro p{
     align-self: flex-start;
     background-color: white;
     color: #5E5CC4;
@@ -630,10 +637,9 @@ body {
     display: inline-block;
     padding: 3px 5px;
     font-size: 14px;
-    margin: 5px;
-  }
+    margin: 0 5px;
 }
-
+}
 @media (max-width: 619px) {
   .main-carousel {
     display: none;
@@ -694,10 +700,17 @@ body {
     text-align: center;
     background-color: #5E5CC4;
     color: white;
+    text-decoration: none;
+  }
+  .platform__corner__highlighted {
+      background-color: grey;
+      color: #5E5CC4;
+    }
   }
   .platform__corner:nth-child(1) {
     top: -75px;
     left: -40px;
+    text-decoration: none;
   }
   .platform__corner:nth-child(2) {
     top: -75px;
@@ -717,6 +730,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-decoration: none;
   }
   .impact2-title {
     color: #5E5CC4;
@@ -758,7 +772,7 @@ body {
     width: 55px;
     max-height:55px;
     overflow: hidden;
-    background: url("burger.png") no-repeat 15px 8px;
+    background: url("./Images/burger.png") no-repeat 15px 8px;
     background-size: 40px;
     background-color: black;
     z-index: 999;
@@ -776,4 +790,39 @@ body {
   .newsletter {
     border-bottom: 0;
   }
+  .awards-announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .awards-announcement-intro {
+    /*position: relative;*/
+  }
+  .awards-announcement-intro img {
+    max-height: 1000px;
+  }
+  .awards-announcement-intro div {
+    bottom: 5px;
+    position: absolute;
+  }
+  .awards-announcement-intro h2 {
+    color: white;
+    background-color: grey;
+    text-align: left;
+    width: 60%;
+    padding: 1em;
+    font-size: 26px;
+    margin: 5px 5px;
+  }
+  .awards-announcement-intro p{
+    align-self: flex-start;
+    background-color: white;
+    color: #5E5CC4;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 14px;
+    margin: 0 5px;
+}
 }
