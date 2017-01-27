@@ -187,6 +187,7 @@ body {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
@@ -264,7 +265,10 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
+.impact2-alexia {
+  margin-left: 0;
+  padding: 0;
+}
 .team-list {
   padding: 0;
   margin: 0;
@@ -342,16 +346,16 @@ body {
   background-repeat: no-repeat;
 }
 .social-twitter {
-  background-image: url(twitter.png);
+  background-image: url(./Images/twitter.png);
 }
 .social-facebook {
-  background-image: url(facebook.png);
+  background-image: url(./Images/facebook.png);
 }
 .social-linkedin {
-  background-image: url(linkedin.png);
+  background-image: url(./Images/linkedin.png);
 }
 .social-youtube {
-  background-image: url(youtube.png);
+  background-image: url(./Images/youtube.png);
 }
 @media (min-width: 620px) {
   .header {
@@ -459,6 +463,18 @@ body {
     bottom: 5px;
     position: absolute;
   }
+  .about-us-intro h1 {
+    text-transform: uppercase;
+    position: relative;
+    align-self: flex-start;
+    background-color: #5E5CC4;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 32px;
+    margin: 5px;
+  }
   .about-us-intro h2 {
     color: white;
     background-color: grey;
@@ -547,6 +563,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     max-width: 1200px;
+    margin-left: 25px;
   }
   .impact2-alexia li {
     width: 300px;
@@ -566,10 +583,36 @@ body {
     text-decoration: none;
   }
   .impact2-alexia img {
-    position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translateY(-50%) translateX(-50%);
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .media-list {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .media-list li{
+    width: auto;
+  }
+  .media-list a {
+    background-color: grey;
+    padding: 10px;
+    margin: 5px;
+    max-width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+  }
+  .media-more {
+    color: #5E5CC4;
+    text-align: center;
   }
   .vision {
     display: flex;
@@ -607,20 +650,27 @@ body {
   }
   .awards-announcement img {
     max-height: 1000px;
+    width: 100%;
   }
   .awards-announcement-intro {
     /*bottom: -250px;*/
-    position: absolute;
+    position: relative;
     max-width: 100%;
   }
-  .awards-announcement h1 {
+  .awards-announcement h2 {
     color: white;
     background-color: grey;
     text-align: left;
     width: 60%;
     padding: 1em;
     font-size: 26px;
-    margin: 0 5px;
+    margin: 0;
+  }
+  .awards-announcement-text {
+    margin: 5px;
+    position: absolute;
+    bottom: 35px;
+    left: 5px;
   }
   .awards-announcement p{
     align-self: flex-start;
@@ -630,7 +680,7 @@ body {
     display: inline-block;
     padding: 3px 5px;
     font-size: 14px;
-    margin: 5px;
+    position: absolute;
   }
 }
 
@@ -671,6 +721,9 @@ body {
     transform: translateX(-50%);
   }
   .about-us {
+    display: none;
+  }
+  .about-us-list {
     display: none;
   }
   .platform {
@@ -722,7 +775,7 @@ body {
     color: #5E5CC4;
     text-align: center;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     background-color: grey;
     padding: 35px;
@@ -730,12 +783,42 @@ body {
   }
   .impact2-intro {
     display: none;
+    margin: none;
   }
-  .vision div {
+  .impact2-image {
+    width: 100%;
+    margin: 0;
+  }
+  .impact2-alexia ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .impact2-alexia li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .impact2-alexia p{
+    color: white;
+    background-color: #5E5CC4;
+    text-align: center;
+    width: 100%;
+    padding: 3em;
+    font-size: 14px;
+    margin: 0;
+  }
+  .impact2-alexia img {
+    display: block;
+  }
+  .vision-intro div {
       color: #5E5CC4;
       text-align: center;
       margin: 15px 0;
     }
+  .vision-intro img {
+    max-width: 100%;
+  }
     .vision h1 {
       text-transform: uppercase;
       color: #5E5CC4;
@@ -745,11 +828,69 @@ body {
       padding-top: 25px;
       border-top: 1px solid #5E5CC4;
     }
+    .vision-intro h2 {
+      color: white;
+      background-color: grey;
+      text-align: center;;
+      width: 100%;
+      padding: 1em;
+      font-size: 26px;
+      margin: 0;
+    }
+    .vision-intro p {
+      align-self: flex-start;
+      background-color: white;
+      color: #5E5CC4;
+      text-decoration: none;
+      display: inline-block;
+      padding: 3px 5px;
+      font-size: 14px;
+      position: absolute;
+      bottom: 40px;
+      left: 5px;
+      width: 60%
+    }
     .vision p {
       color: #5E5CC4;
       text-align: center;
       margin: 15px 0;
       padding-bottom: 20px;
+    }
+  .awards-announcement img {
+      max-height: 1000px;
+      width: 100%;
+      display: block;
+      position: relative;;
+    }
+  .awards-announcement-intro {
+      /*bottom: -250px;*/
+      max-width: 100%;
+    }
+  .awards-announcement h2 {
+      color: white;
+      background-color: grey;
+      text-align: left;
+      width: 100%;
+      padding: 1em;
+      font-size: 26px;
+      margin: 0;
+    }
+  .awards-announcement-text {
+      margin: 0;
+      bottom: 35px;
+      left: 5px;
+    }
+  .awards-announcement p{
+      align-self: flex-start;
+      background-color: white;
+      color: #5E5CC4;
+      text-decoration: none;
+      display: inline-block;
+      padding: 3px 5px;
+      font-size: 14px;
+      position: absolute;
+      bottom: 350px;
+      margin: 5px;
     }
   .nav {
     position: absolute;
@@ -758,7 +899,7 @@ body {
     width: 55px;
     max-height:55px;
     overflow: hidden;
-    background: url("burger.png") no-repeat 15px 8px;
+    background: url("./Images/burger.png") no-repeat 15px 8px;
     background-size: 40px;
     background-color: black;
     z-index: 999;
