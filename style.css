@@ -269,26 +269,6 @@ body {
   margin-left: 0;
   padding: 0;
 }
-.intro-network-title {
-  text-transform: uppercase;
-  color: #5E5CC4;
-  font-size: 32px;
-  text-align: center;
-  font-weight: bold;
-  padding: 40px;
-  border-top: 1px solid #5E5CC4;
-}
-.intro-network-text {
-  text-align: center;
-  background-color: #58595B;
-  padding: 50px;
-  list-style: none;
-  margin: 10px;
-  height: 30%;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
-}
 .social-logos {
   padding: 0 40px 10px;
   margin: 10px;
@@ -613,7 +593,7 @@ body {
     color: #5E5CC4;
     margin: 0;
     padding: 30px;
-    text-align: center;;
+    text-align: justify;
   }
   .about-us-text-intro {
     color: #5E5CC4;
@@ -621,6 +601,82 @@ body {
     padding: 30px 10px 0;
     font-size: 18px;
     text-align: center;
+  }
+  .about-us-text-partners h1{
+    text-transform: uppercase;
+    background-color: #5E5CC4;
+    color: white;
+    padding: 20px 10px 17px;
+    margin: 10px;
+    text-align: center;
+    min-height: 10%;
+  }
+  .about-us-text-partners p{
+    color: #5E5CC4;
+    margin: 0;
+    padding: 30px;
+    text-align: left;
+  }
+  .about-us-text-button {
+    color: #5E5CC4;
+    padding: 10px 0 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .partners-logo-list-founding {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .partners-logo-list-creative {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .partners-logo-list-academic {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .partners-logo-list-project {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .partners-logo {
+    padding-top: 100px;
+    text-align: center;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    position: relative;
+  }
+  .partners-logo img{
+    width: 80%;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+  }
+  .partners-logo-categorie {
+    text-transform: uppercase;
+    background-color: #5E5CC4;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    padding: 60px;
   }
   .team-list {
     list-style: none;
@@ -659,6 +715,76 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
+  }
+  .network-title {
+    bottom: 5px;
+    position: absolute;
+  }
+  .network-title h1{
+    text-transform: uppercase;
+    position: relative;
+    align-self: flex-start;
+    background-color: #5E5CC4;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 32px;
+    margin: 5px;
+  }
+  .network-image2 {
+    display: none;
+  }
+  .network-title-intro {
+    position: relative;
+  }
+  .network-title-text {
+    align-self: flex-start;
+    background-color: white;
+    color: #5E5CC4;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 18px;
+    margin: 5px;
+    position: absolute;
+    font-size: 24px;
+  }
+  .network-title-quote {
+    color: white;
+    background-color: grey;
+    text-align: justify;;
+    width: 100%;
+    padding: 1em;
+    font-size: 26px;
+    margin: 0;
+  }
+  .network-title-quote2 {
+    color: white;
+    background-color: green;
+    padding: 30px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 0;
+  }
+  .network-title-quote3 {
+    color: white;
+    background-color: grey;
+    padding: 30px;
+    text-align: justify;;
+    font-size: 18px;
+    margin: 0;
+  }
+  .network-list-images {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*.network-images {
+    max-width: 100%;
+    display: inline-flex;*/
+  .network-images img {
+    width: 100%;
   }
   .awards-announcement img {
     max-height: 1000px;
@@ -768,6 +894,59 @@ body {
     margin: 140px 10px 0;
     padding: 30px;
     text-align: justify;
+  }
+  .about-us-text-partners li {
+    position: relative;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    min-width: 25%;
+  }
+  .about-us-text-partners h1 {
+    text-transform: uppercase;
+    color: #5E5CC4;
+    border-top: 1px solid #5E5CC4;
+    padding: 20px 10px 17px;
+    margin: 10px;
+    text-align: center;
+  }
+  .about-us-text-partners p {
+    color: #5E5CC4;
+    margin: 0;
+    padding: 30px;
+    text-align: justify;
+  }
+  .partners-logo-list-founding {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+  }
+  .partners-logo-list-creative {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+  }
+  .partners-logo-list-academic {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+  }
+  .partners-logo-list-project {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+  }
+  .partners-logo {
+    padding: 25px;
+    text-align: center;
+  }
+  .partners-logo-categorie {
+    text-transform: uppercase;
+    color: #5E5CC4;
+    padding: 20px 10px 17px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
   }
   .team-list {
     list-style: none;
@@ -928,6 +1107,72 @@ body {
       bottom: 350px;
       margin: 5px;
     }
+  .network-title {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .network-title h1{
+    text-transform: uppercase;
+    color: #5E5CC4;
+    padding: 20px 10px 17px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .network-title-text {
+    color: white;
+    background-color: grey;
+    padding: 80px;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .network-title-quote {
+    color: white;
+    background-color: #5E5CC4;
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  .network-title-quote2 {
+    color: white;
+    background-color: green;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .network-title-quote3 {
+    color: white;
+    background-color: grey;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .network-list-images {
+    /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*.network-images {
+    max-width: 100%;
+    display: inline-flex;*/
+  .network-images img {
+    /*object-fit: cover;
+    display: block;*/
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .nav {
     position: absolute;
     top: 5px;
