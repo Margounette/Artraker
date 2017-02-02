@@ -718,7 +718,6 @@ body {
   }
   .network-title {
     bottom: 5px;
-    position: absolute;
   }
   .network-title h1{
     text-transform: uppercase;
