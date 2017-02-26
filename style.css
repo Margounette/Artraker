@@ -718,18 +718,16 @@ body {
   }
   .network-title {
     bottom: 5px;
+    text-align: center;
   }
   .network-title h1{
     text-transform: uppercase;
-    position: relative;
-    align-self: flex-start;
-    background-color: #5E5CC4;
+    padding: 25px;
+    margin: 30px;
+    background: #5E5CC4;
     color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px;
-    font-size: 32px;
-    margin: 5px;
+    text-align: center;
+
   }
   .network-image2 {
     display: none;
@@ -772,6 +770,17 @@ body {
     text-align: justify;;
     font-size: 18px;
     margin: 0;
+  }
+  .network-title-year a{
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .network-title-year p {
+    padding: 25px;
+    margin: 30px;
+    background: #5E5CC4;
+    color: white;
+    text-align: center;
   }
   .network-list-images {
     list-style: none;
@@ -817,6 +826,70 @@ body {
     padding: 3px 5px;
     font-size: 14px;
     position: absolute;
+  }
+  .network-artist-list {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+  }
+  .network-artist {
+    position: relative;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .network-artist img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+  .network-artist div {
+    position: absolute;
+    bottom: 5px;
+  }
+  .network-artist p {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #5E5CC4;
+    padding: 5px;
+    margin: 5px;
+    width: 180px;
+  }
+  .network-artist h1 {
+    font-size: 18px;
+    background-color: grey;
+    padding: 5px;
+    margin: 5px;
+    width: 180px;
+  }
+  .network-artist h2{
+    font-size: 18px;
+    background-color: green;
+    padding: 5px;
+    margin: 5px;
+    width: 180px;
+  }
+  .network-list-images {
+    /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*.network-images {
+    max-width: 100%;
+    display: inline-flex;*/
+  .network-images img {
+    /*object-fit: cover;
+    display: block;*/
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -1120,9 +1193,9 @@ body {
   .network-title-text {
     color: white;
     background-color: grey;
-    padding: 80px;
+    padding: 40px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     text-transform: uppercase;
     margin: 0 0 10px;
   }
@@ -1149,6 +1222,62 @@ body {
     text-align: center;
     font-size: 18px;
     margin: 0 0 10px;
+  }
+  .network-title-year {
+    color: white;
+    background-color: grey;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .network-title-year a{
+    text-decoration: none;
+    color: white;
+  }
+  .network-artist-list {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+  }
+  .network-artist {
+    position: relative;
+    max-width: 300px;
+    margin: 10px;
+  }
+  .network-artist img{
+    object-fit: cover;
+    display: block;
+    width: 300px;
+    max-height: 180px;
+  }
+  .network-artist div {
+    position: absolute;
+    bottom: 5px;
+  }
+  .network-artist p {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: #5E5CC4;
+    padding: 5px;
+    margin: 5px;
+    width: 130px;
+  }
+  .network-artist h1 {
+    font-size: 12px;
+    background-color: grey;
+    padding: 5px;
+    margin: 5px;
+    width: 130px;
+  }
+  .network-artist h2{
+    font-size: 12px;
+    background-color: green;
+    padding: 5px;
+    margin: 5px;
+    width: 130px;
   }
   .network-list-images {
     /*display: flex;
